@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-UQMD91R.ExternalSources"
+  DTS:DTSID="{08ED3237-59FF-4BD1-B810-62364A168AAC}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=ExternalSources;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-HotelETL-{08ED3237-59FF-4BD1-B810-62364A168AAC}DESKTOP-UQMD91R.ExternalSources;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

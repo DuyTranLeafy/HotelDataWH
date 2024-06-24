@@ -1,0 +1,1594 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/16/2024 2:37:30 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-UQMD91R"
+  DTS:CreatorName="DESKTOP-UQMD91R\THUYDUNG"
+  DTS:DTSID="{3E5F20C4-4D9D-4EEC-A31F-060A79E5429B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Stage_Rooms"
+  DTS:PackageType="5"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{5A9C0805-B052-43FA-94F7-6EC45088911C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CCBBCD75-1F69-4999-92D7-AE2235449522}"
+      DTS:ObjectName="DESKTOP-UQMD91R.Hotel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=Hotel;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Stage_Rooms-{CCBBCD75-1F69-4999-92D7-AE2235449522}DESKTOP-UQMD91R.Hotel;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8FC86F92-5EAA-4C69-B0A1-16952E73CED6}"
+      DTS:ObjectName="DESKTOP-UQMD91R.Hotel 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=Hotel;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{45C6647E-1148-4D10-A3A3-F42479C8426F}"
+      DTS:ObjectName="DESKTOP-UQMD91R.Hotel 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=Hotel;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{15AF7A90-B2E3-4A11-B983-DA9F38D01D43}"
+      DTS:ObjectName="DESKTOP-UQMD91R.Hotel 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=Hotel;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{36DE2826-B30A-48D0-8092-0E82F64290A5}"
+      DTS:ObjectName="DESKTOP-UQMD91R.Hotel 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=Hotel;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5512DD29-D9E7-4BD2-88A6-D4F0C8AD498B}"
+      DTS:ObjectName="DESKTOP-UQMD91R.hotel_stage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=hotel_stage;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{65232A7E-E37B-4546-A627-25B6287A11C3}"
+      DTS:ObjectName="DESKTOP-UQMD91R.hotel_stage 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=hotel_stage;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{54B58800-78F5-4814-9E48-B16E4F8DA335}"
+      DTS:ObjectName="DESKTOP-UQMD91R.hotel_stage 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=hotel_stage;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E6BAC35B-5A56-484F-B038-905FB34DB256}"
+      DTS:ObjectName="DESKTOP-UQMD91R.hotel_stage 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-UQMD91R;Initial Catalog=hotel_stage;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DF - Stage BedTypes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{91A13C72-8BF6-4419-8DBF-5C4B14AA0792}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DF - Stage BedTypes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DST - Stage stgBedTypes"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[stgBedTypes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].Columns[BedTypeID]"
+                      cachedDataType="i4"
+                      cachedName="BedTypeID"
+                      externalMetadataColumnId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].ExternalColumns[BedTypeID]"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[BedTypeID]" />
+                    <inputColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].Columns[BedType]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BedType"
+                      externalMetadataColumnId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].ExternalColumns[BedType]"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[BedType]" />
+                    <inputColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].Columns[Notes]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Notes"
+                      externalMetadataColumnId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].ExternalColumns[Notes]"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[Notes]" />
+                    <inputColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].Columns[BedCost]"
+                      cachedDataType="cy"
+                      cachedName="BedCost"
+                      externalMetadataColumnId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].ExternalColumns[BedCost]"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[BedCost]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].ExternalColumns[BedTypeID]"
+                      dataType="i4"
+                      name="BedTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].ExternalColumns[BedType]"
+                      dataType="wstr"
+                      length="50"
+                      name="BedType" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].ExternalColumns[Notes]"
+                      dataType="wstr"
+                      length="255"
+                      name="Notes" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input].ExternalColumns[BedCost]"
+                      dataType="cy"
+                      name="BedCost" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF - Stage BedTypes\SRC - Hotel BedType"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="SRC - Hotel BedType"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[BedTypes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[BedTypeID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].ExternalColumns[BedTypeID]"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[BedTypeID]"
+                      name="BedTypeID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[BedType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].ExternalColumns[BedType]"
+                      length="50"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[BedType]"
+                      name="BedType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[Notes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].ExternalColumns[Notes]"
+                      length="255"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[Notes]"
+                      name="Notes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[BedCost]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].ExternalColumns[BedCost]"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].Columns[BedCost]"
+                      name="BedCost"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].ExternalColumns[BedTypeID]"
+                      dataType="i4"
+                      name="BedTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].ExternalColumns[BedType]"
+                      dataType="wstr"
+                      length="50"
+                      name="BedType" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].ExternalColumns[Notes]"
+                      dataType="wstr"
+                      length="255"
+                      name="Notes" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output].ExternalColumns[BedCost]"
+                      dataType="cy"
+                      name="BedCost" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[BedTypeID]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[BedTypeID]"
+                      name="BedTypeID" />
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[BedType]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[BedType]"
+                      name="BedType" />
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[Notes]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[Notes]"
+                      name="Notes" />
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[BedCost]"
+                      dataType="cy"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[BedCost]"
+                      name="BedCost" />
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DF - Stage BedTypes.Paths[OLE DB Source Output]"
+              endId="Package\DF - Stage BedTypes\DST - Stage stgBedTypes.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DF - Stage BedTypes\SRC - Hotel BedType.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DF - Stage Rooms"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E755BB9D-29FF-448B-ADE0-3DB75C699763}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DF - Stage Rooms"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DST - Stage stgHotelRooms"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[stgHotelRooms]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage 3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].Columns[RoomNumber]"
+                      cachedDataType="r8"
+                      cachedName="RoomNumber"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[RoomNumber]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[RoomNumber]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].Columns[RoomTypeID]"
+                      cachedDataType="i4"
+                      cachedName="RoomTypeID"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[RoomTypeID]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[RoomTypeID]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].Columns[BedTypeID]"
+                      cachedDataType="i4"
+                      cachedName="BedTypeID"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[BedTypeID]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[BedTypeID]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].Columns[Rate]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Rate"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[Rate]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[Rate]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].Columns[RoomStatusID]"
+                      cachedDataType="i4"
+                      cachedName="RoomStatusID"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[RoomStatusID]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[RoomStatusID]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].Columns[Notes]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Notes"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[Notes]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[Notes]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[RoomNumber]"
+                      dataType="r8"
+                      name="RoomNumber" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[RoomTypeID]"
+                      dataType="i4"
+                      name="RoomTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[BedTypeID]"
+                      dataType="i4"
+                      name="BedTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[Rate]"
+                      dataType="wstr"
+                      length="50"
+                      name="Rate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[RoomStatusID]"
+                      dataType="i4"
+                      name="RoomStatusID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input].ExternalColumns[Notes]"
+                      dataType="wstr"
+                      length="255"
+                      name="Notes" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="SRC - Stage Hotel Rooms"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Rooms]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 4]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[RoomNumber]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[RoomNumber]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[RoomNumber]"
+                      name="RoomNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[RoomTypeID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[RoomTypeID]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[RoomTypeID]"
+                      name="RoomTypeID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[BedTypeID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[BedTypeID]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[BedTypeID]"
+                      name="BedTypeID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[Rate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[Rate]"
+                      length="50"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[Rate]"
+                      name="Rate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[RoomStatusID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[RoomStatusID]"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[RoomStatusID]"
+                      name="RoomStatusID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[Notes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[Notes]"
+                      length="255"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].Columns[Notes]"
+                      name="Notes"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[RoomNumber]"
+                      dataType="r8"
+                      name="RoomNumber" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[RoomTypeID]"
+                      dataType="i4"
+                      name="RoomTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[BedTypeID]"
+                      dataType="i4"
+                      name="BedTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[Rate]"
+                      dataType="wstr"
+                      length="50"
+                      name="Rate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[RoomStatusID]"
+                      dataType="i4"
+                      name="RoomStatusID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output].ExternalColumns[Notes]"
+                      dataType="wstr"
+                      length="255"
+                      name="Notes" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[RoomNumber]"
+                      dataType="r8"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[RoomNumber]"
+                      name="RoomNumber" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[RoomTypeID]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[RoomTypeID]"
+                      name="RoomTypeID" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[BedTypeID]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[BedTypeID]"
+                      name="BedTypeID" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[Rate]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[Rate]"
+                      name="Rate" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[RoomStatusID]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[RoomStatusID]"
+                      name="RoomStatusID" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[Notes]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[Notes]"
+                      name="Notes" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DF - Stage Rooms.Paths[OLE DB Source Output]"
+              endId="Package\DF - Stage Rooms\DST - Stage stgHotelRooms.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DF - Stage RoomTypes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{B298AFA2-D0D0-45BA-8713-C6AA1D5590DC}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DF - Stage RoomTypes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DST - Stage stgRoomTypes"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[stgRoomTypes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-UQMD91R.hotel_stage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].Columns[RoomTypeID]"
+                      cachedDataType="i4"
+                      cachedName="RoomTypeID"
+                      externalMetadataColumnId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[RoomTypeID]"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[RoomTypeID]" />
+                    <inputColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].Columns[RoomType]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="RoomType"
+                      externalMetadataColumnId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[RoomType]"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[RoomType]" />
+                    <inputColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].Columns[Notes]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Notes"
+                      externalMetadataColumnId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[Notes]"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[Notes]" />
+                    <inputColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].Columns[TypeCost]"
+                      cachedDataType="cy"
+                      cachedName="TypeCost"
+                      externalMetadataColumnId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[TypeCost]"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[TypeCost]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[RoomTypeID]"
+                      dataType="i4"
+                      name="RoomTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[RoomType]"
+                      dataType="wstr"
+                      length="50"
+                      name="RoomType" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[Notes]"
+                      dataType="wstr"
+                      length="255"
+                      name="Notes" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[TypeCost]"
+                      dataType="cy"
+                      name="TypeCost" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="SRC - Hotel RoomType"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[RoomTypes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-UQMD91R.Hotel 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[RoomTypeID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].ExternalColumns[RoomTypeID]"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[RoomTypeID]"
+                      name="RoomTypeID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[RoomType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].ExternalColumns[RoomType]"
+                      length="50"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[RoomType]"
+                      name="RoomType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[Notes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].ExternalColumns[Notes]"
+                      length="255"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[Notes]"
+                      name="Notes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[TypeCost]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].ExternalColumns[TypeCost]"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].Columns[TypeCost]"
+                      name="TypeCost"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].ExternalColumns[RoomTypeID]"
+                      dataType="i4"
+                      name="RoomTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].ExternalColumns[RoomType]"
+                      dataType="wstr"
+                      length="50"
+                      name="RoomType" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].ExternalColumns[Notes]"
+                      dataType="wstr"
+                      length="255"
+                      name="Notes" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output].ExternalColumns[TypeCost]"
+                      dataType="cy"
+                      name="TypeCost" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[RoomTypeID]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[RoomTypeID]"
+                      name="RoomTypeID" />
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[RoomType]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[RoomType]"
+                      name="RoomType" />
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[Notes]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[Notes]"
+                      name="Notes" />
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[TypeCost]"
+                      dataType="cy"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[TypeCost]"
+                      name="TypeCost" />
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DF - Stage RoomTypes.Paths[OLE DB Source Output]"
+              endId="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DF - Stage RoomTypes\SRC - Hotel RoomType.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - Truncate Stage Tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{BDB64C18-E676-4F5E-88B5-CA21D3229165}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - Truncate Stage Tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{5512DD29-D9E7-4BD2-88A6-D4F0C8AD498B}"
+          SQLTask:SqlStatementSource="truncate table stgRoomTypes;&#xA;truncate table stgBedTypes;&#xA;truncate table stgHotelRooms;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{F338E847-7D30-4CA4-9611-C6DD7901246B}"
+      DTS:From="Package\SQL - Truncate Stage Tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\DF - Stage RoomTypes" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{F05EF345-B073-418D-99C8-F50D22ED1F74}"
+      DTS:From="Package\SQL - Truncate Stage Tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\DF - Stage BedTypes" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{514BF1B4-8066-49ED-AB40-D5A9BB05DA4E}"
+      DTS:From="Package\SQL - Truncate Stage Tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\DF - Stage Rooms" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="217.333333333334,42.6666666666667"
+          Id="Package\SQL - Truncate Stage Tables"
+          TopLeft="156.874992987141,47.2105257974272" />
+        <NodeLayout
+          Size="190.666666666667,42.6666666666667"
+          Id="Package\DF - Stage RoomTypes"
+          TopLeft="2.49999988824133,155.315787768348" />
+        <NodeLayout
+          Size="181.333333333334,42.6666666666667"
+          Id="Package\DF - Stage BedTypes"
+          TopLeft="186.874991646037,213.473681866627" />
+        <NodeLayout
+          Size="168,42.6666666666667"
+          Id="Package\DF - Stage Rooms"
+          TopLeft="356.249984074384,167.631577106807" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="213.208326320475,89.8771924640939">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-115.3749930989,65.4385953042536"
+              Start="0,0"
+              End="-115.3749930989,57.9385953042536">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.3416618311492" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.3416618311492"
+                    Point2="0,22.3416618311492"
+                    Point3="-4,22.3416618311492" />
+                  <mssgle:LineSegment
+                    End="-111.3749930989,22.3416618311492" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-111.3749930989,22.3416618311492"
+                    Point2="-115.3749930989,22.3416618311492"
+                    Point3="-115.3749930989,26.3416618311492" />
+                  <mssgle:LineSegment
+                    End="-115.3749930989,57.9385953042536" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="265.541659653808,89.8771924640939">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.9999986588957,123.596489402533"
+              Start="0,0"
+              End="11.9999986588957,116.096489402533">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.7982447012667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,57.7982447012667"
+                    Point2="0,61.7982447012667"
+                    Point3="4,61.7982447012667" />
+                  <mssgle:LineSegment
+                    End="7.99999865889566,61.7982447012667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.99999865889566,61.7982447012667"
+                    Point2="11.9999986588957,61.7982447012667"
+                    Point3="11.9999986588957,65.7982447012667" />
+                  <mssgle:LineSegment
+                    End="11.9999986588957,116.096489402533" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="317.874992987141,89.8771924640939">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="122.374991087243,77.7543846427129"
+              Start="0,0"
+              End="122.374991087243,70.2543846427129">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5464464739767" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5464464739767"
+                    Point2="0,26.5464464739767"
+                    Point3="4,26.5464464739767" />
+                  <mssgle:LineSegment
+                    End="118.374991087243,26.5464464739767" />
+                  <mssgle:CubicBezierSegment
+                    Point1="118.374991087243,26.5464464739767"
+                    Point2="122.374991087243,26.5464464739767"
+                    Point3="122.374991087243,30.5464464739767" />
+                  <mssgle:LineSegment
+                    End="122.374991087243,70.2543846427129" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DF - Stage RoomTypes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="192,42.6666666666667"
+          Id="Package\DF - Stage RoomTypes\SRC - Hotel RoomType"
+          TopLeft="119.374994663522,21.8947366017054" />
+        <NodeLayout
+          Size="213.333333333334,42.6666666666667"
+          Id="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes"
+          TopLeft="92.374996116385,132.763156497413" />
+        <EdgeLayout
+          Id="Package\DF - Stage RoomTypes.Paths[OLE DB Source Output]"
+          TopLeft="215.374994663522,64.561403268372">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-16.3333318804702,68.2017532290405"
+              Start="0,0"
+              End="-16.3333318804702,60.7017532290405">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.1008766145202" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.1008766145202"
+                    Point2="0,34.1008766145202"
+                    Point3="-4,34.1008766145202" />
+                  <mssgle:LineSegment
+                    End="-12.3333318804702,34.1008766145202" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-12.3333318804702,34.1008766145202"
+                    Point2="-16.3333318804702,34.1008766145202"
+                    Point3="-16.3333318804702,38.1008766145202" />
+                  <mssgle:LineSegment
+                    End="-16.3333318804702,60.7017532290405" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\DF - Stage BedTypes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181.333333333334,42.6666666666667"
+          Id="Package\DF - Stage BedTypes\SRC - Hotel BedType"
+          TopLeft="287.999991416931,77.9999976754189" />
+        <NodeLayout
+          Size="202.666666666667,42.6666666666667"
+          Id="Package\DF - Stage BedTypes\DST - Stage stgBedTypes"
+          TopLeft="305.99999088049,196.999994128943" />
+        <EdgeLayout
+          Id="Package\DF - Stage BedTypes.Paths[OLE DB Source Output]"
+          TopLeft="378.666658083598,120.666664342086">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="28.6666661302248,76.3333297868571"
+              Start="0,0"
+              End="28.6666661302248,68.8333297868571">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.1666648934285" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.1666648934285"
+                    Point2="0,38.1666648934285"
+                    Point3="4,38.1666648934285" />
+                  <mssgle:LineSegment
+                    End="24.6666661302248,38.1666648934285" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.6666661302248,38.1666648934285"
+                    Point2="28.6666661302248,38.1666648934285"
+                    Point3="28.6666661302248,42.1666648934285" />
+                  <mssgle:LineSegment
+                    End="28.6666661302248,68.8333297868571" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\DF - Stage Rooms">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="204,42.6666666666667"
+          Id="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms"
+          TopLeft="175.857137616192,15.2857138301645" />
+        <NodeLayout
+          Size="213.333333333334,42.6666666666667"
+          Id="Package\DF - Stage Rooms\DST - Stage stgHotelRooms"
+          TopLeft="173.999994814396,110.428568137544" />
+        <EdgeLayout
+          Id="Package\DF - Stage Rooms.Paths[OLE DB Source Output]"
+          TopLeft="279.261899548627,57.9523804968312">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.4761876407125"
+              Start="0,0"
+              End="0,44.9761876407125">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.9761876407125" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage RoomTypes\SRC - Hotel RoomType">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage RoomTypes\DST - Stage stgRoomTypes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage BedTypes\SRC - Hotel BedType">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage BedTypes\DST - Stage stgBedTypes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage Rooms\SRC - Stage Hotel Rooms">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage Rooms\DST - Stage stgHotelRooms">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tranv\\source\\repos\\HotelWHCube\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72FF8BB2-2B57-4DA5-901F-6CFEA61BA411}|HotelBooking\\HotelBooking.dwproj|C:\\Users\\tranv\\source\\repos\\HotelWHCube\\HotelBooking\\Dim Employees.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{72FF8BB2-2B57-4DA5-901F-6CFEA61BA411}|HotelBooking\\HotelBooking.dwproj|solutionrelative:HotelBooking\\Dim Employees.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FF8BB2-2B57-4DA5-901F-6CFEA61BA411}|HotelBooking\\HotelBooking.dwproj|C:\\Users\\tranv\\source\\repos\\HotelWHCube\\HotelBooking\\HotelBookingDW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{72FF8BB2-2B57-4DA5-901F-6CFEA61BA411}|HotelBooking\\HotelBooking.dwproj|solutionrelative:HotelBooking\\HotelBookingDW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dim Employees.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\tranv\\source\\repos\\HotelWHCube\\HotelBooking\\Dim Employees.dim",
+              "RelativeDocumentMoniker": "HotelBooking\\Dim Employees.dim",
+              "ToolTip": "C:\\Users\\tranv\\source\\repos\\HotelWHCube\\HotelBooking\\Dim Employees.dim [Design]",
+              "RelativeToolTip": "HotelBooking\\Dim Employees.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-17T07:29:14.525Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HotelBookingDW.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\tranv\\source\\repos\\HotelWHCube\\HotelBooking\\HotelBookingDW.cube",
+              "RelativeDocumentMoniker": "HotelBooking\\HotelBookingDW.cube",
+              "ToolTip": "C:\\Users\\tranv\\source\\repos\\HotelWHCube\\HotelBooking\\HotelBookingDW.cube [Design]",
+              "RelativeToolTip": "HotelBooking\\HotelBookingDW.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-17T07:27:33.675Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

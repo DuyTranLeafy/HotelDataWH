@@ -1,0 +1,312 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/16/2024 10:15:26 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-UQMD91R"
+  DTS:CreatorName="DESKTOP-UQMD91R\THUYDUNG"
+  DTS:DTSID="{53929448-CE73-473F-9F88-6FB741DCB30E}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{284F4756-667A-4816-8096-2F91CDCEEEBB}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\PKG - DateDimensionImport"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{667883AE-058F-404C-9FA1-1E9CCAC75BE7}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - DateDimensionImport"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>DateDimensionImport.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - DW_Bookings"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{15B405E6-F78B-4B73-A099-F44968C8ABDB}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - DW_Bookings"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>DW_Bookings.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - DW_Sales"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{857D8C87-8984-46AF-90CD-1DDAA078AFF8}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - DW_Sales"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>DW_Sales.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Stage_Bookings"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{35F76B9C-FF90-44B3-93A8-8CA804420821}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Stage_Bookings"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>Stage_Bookings.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Stage_Sales"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{29397349-EB98-4039-BBB6-0DC76711DB19}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Stage_Sales"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>Stage_Sales.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{E26E7289-232C-4EEC-B3DD-20F749BFECE4}"
+      DTS:From="Package\PKG - DateDimensionImport"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\PKG - Stage_Sales" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{A1FBF7BB-A7F3-420C-82B3-BB5FAF6AC01B}"
+      DTS:From="Package\PKG - DateDimensionImport"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\PKG - Stage_Bookings" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{36084CBA-5BE2-4AE3-833A-BC89962D367C}"
+      DTS:From="Package\PKG - Stage_Sales"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\PKG - DW_Sales" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{61E6334C-C32C-460F-A11D-FEF533C78DBC}"
+      DTS:From="Package\PKG - Stage_Bookings"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\PKG - DW_Bookings" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="214.666666666667,42.6666666666667"
+          Id="Package\PKG - DateDimensionImport"
+          TopLeft="258.624988684431,21.921052451279" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\PKG - Stage_Sales"
+          TopLeft="82.4999963119627,110.15789352733" />
+        <NodeLayout
+          Size="189.333333333334,42.6666666666667"
+          Id="Package\PKG - Stage_Bookings"
+          TopLeft="338.124984884635,110.842104046134" />
+        <NodeLayout
+          Size="161.333333333334,42.6666666666667"
+          Id="Package\PKG - DW_Sales"
+          TopLeft="64.7916663034508,188.842103189709" />
+        <NodeLayout
+          Size="178.666666666667,42.6666666666667"
+          Id="Package\PKG - DW_Bookings"
+          TopLeft="330.416654429089,190.210524227315" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="331.51387757332,64.5877191179457">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-163.013881261357,45.5701744093845"
+              Start="0,0"
+              End="-163.013881261357,38.0701744093845">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.430354138444" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.430354138444"
+                    Point2="0,18.430354138444"
+                    Point3="-4,18.430354138444" />
+                  <mssgle:LineSegment
+                    End="-159.013881261357,18.430354138444" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-159.013881261357,18.430354138444"
+                    Point2="-163.013881261357,18.430354138444"
+                    Point3="-163.013881261357,22.430354138444" />
+                  <mssgle:LineSegment
+                    End="-163.013881261357,38.0701744093845" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="400.402766462209,64.5877191179457">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32.3888850890928,46.2543849281878"
+              Start="0,0"
+              End="32.3888850890928,38.7543849281878">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.7070755319921" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.7070755319921"
+                    Point2="0,18.7070755319921"
+                    Point3="4,18.7070755319921" />
+                  <mssgle:LineSegment
+                    End="28.3888850890928,18.7070755319921" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28.3888850890928,18.7070755319921"
+                    Point2="32.3888850890928,18.7070755319921"
+                    Point3="32.3888850890928,22.7070755319921" />
+                  <mssgle:LineSegment
+                    End="32.3888850890928,38.7543849281878" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="168.499996311963,152.824560193997">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-23.0416633418452,36.017542995712"
+              Start="0,0"
+              End="-23.0416633418452,28.517542995712">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.008771497856" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.008771497856"
+                    Point2="0,18.008771497856"
+                    Point3="-4,18.008771497856" />
+                  <mssgle:LineSegment
+                    End="-19.0416633418452,18.008771497856" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-19.0416633418452,18.008771497856"
+                    Point2="-23.0416633418452,18.008771497856"
+                    Point3="-23.0416633418452,22.008771497856" />
+                  <mssgle:LineSegment
+                    End="-23.0416633418452,28.517542995712" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="432.791651551302,153.5087707128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13.0416637888797,36.7017535145152"
+              Start="0,0"
+              End="-13.0416637888797,29.2017535145152">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.3508767572576" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.3508767572576"
+                    Point2="0,18.3508767572576"
+                    Point3="-4,18.3508767572576" />
+                  <mssgle:LineSegment
+                    End="-9.0416637888797,18.3508767572576" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.0416637888797,18.3508767572576"
+                    Point2="-13.0416637888797,18.3508767572576"
+                    Point3="-13.0416637888797,22.3508767572576" />
+                  <mssgle:LineSegment
+                    End="-13.0416637888797,29.2017535145152" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
